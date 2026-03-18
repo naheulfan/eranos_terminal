@@ -1,6 +1,6 @@
 {
-    "serverAddress": "localhost",
-    "serverName": "Node Y56 Intranet",
+    "serverAddress": "test",
+    "serverName": "Advanced Comp/Con Encrypted transmissions server",
     "iconName": "compcon.png",
     "terminalID": "Y56",
     "defaultUser": {
