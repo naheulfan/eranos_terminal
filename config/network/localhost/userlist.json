@@ -7,13 +7,19 @@
 
     {
         "userId": "a",
-        "password": "",
+        "password": "a",
         "userName": "Mulder, Fox"
     },
 
     {
         "userId": "admin",
         "password": "admin",
+        "userName": "root"
+    },
+
+    {
+        "userId": "test",
+        "password": "test",
         "userName": "root"
     },
 
