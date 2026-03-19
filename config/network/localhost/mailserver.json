@@ -1,7 +1,7 @@
 [
     {
-        "from": "Traveller",
-        "to": ["8A73B5", "a"],
+        "from": "Blackbeard",
+        "to": ["Aperez", "a"],
         "title": "Do not Open",
         "body": "this is a test to see if the server updates"
     },
@@ -19,7 +19,7 @@
     },
     {
         "from": "Mike",
-        "to": ["admin"],
+        "to": ["Aperez"],
         "title": "wtf are you kidding me?",
         "body": "Are you kidding me? Why don't you change your password?  The system is entirely compromised until you correct it.  You're the sysadmin, if you're this dumb the corporation is at risk."
     }
