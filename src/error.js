@@ -54,7 +54,7 @@ class InvalidPasswordError extends FunctionalError {
 class MailServerIsEmptyError extends FunctionalError {
     constructor() {
         super();
-        this.message = "There is no new mail registered.";
+        this.message = "No transcripts recorded.";
     }
 }
 
