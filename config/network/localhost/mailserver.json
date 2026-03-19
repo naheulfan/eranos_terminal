@@ -1,26 +1,29 @@
 [
     {
         "from": "Blackbeard",
-        "to": ["Aperez", "a"],
-        "title": "Do not Open",
-        "body": "this is a test to see if the server updates"
-    },
-    {
-        "from": "Software",
-        "to": ["8A73B5", "a"],
-        "title": "undefined",
-        "body": "001100101 011000101 0110 10 01001 01 01110 1001010101"
-    },
-    {
-        "from": "Josephus A. Miller",
-        "to": ["8A73B5", "a"],
-        "title": "Contrato n22",
-        "body": "Sector: X11.  Objective: Investigate the sewers and report only to me.  Reward: 22 MCr."
-    },
-    {
-        "from": "Mike",
         "to": ["Aperez"],
-        "title": "wtf are you kidding me?",
+        "title": "Transmission Log 5024u-12-11",
+        "body": "[Blackbeard] Ariel. I have been informed that Union will be conducting a large scale operation on Gemma.  No doubt influenced by the IPS-N dogs.  [Ariel] How large scale are we talking?  [Blackbeard] Unsure of the exact numbers, but from my understanding the whole damn planet will be swarming with Lancers. [Ariel] We must free Alfven Alto before the outsiders get their hands on it then. [Blackbeard] Already too late. That bitch Mila from the Enforcers squad has already landed and is tasked with the defense of the city.  [Ariel] I will defeat her, lord Blackbeard  [Blackbeard]  You will not. Count yourself lucky she's been tasked with the defense of the city. I'm unsure how much IPS-N knows about the city, but if she's in charge of security they do NOT want it to fall. [Ariel] ... But the ci-  [Blackbeard] SILENCE you battle freak, I don't care what Susano-o demands of you. Here are your new orders : focus the anti-air cannon on IPS-N mining equipment. [Ariel] We'll be detected.  [Blackbeard] I've already tasked the raiders under crusher with ensuring the Union communication array is disrupted. So long as you keep the Anti-orbital surveillance camouflage up, you should not get detected. [Ariel] ...Understood.  (END OF TRANSMISSION) "
+    },
+
+    {
+        "from": "Blackbeard",
+        "to": ["Aperez"],
+        "title": "Transmission Log 5024u-12-11",
+        "body": "Are you kidding me? Why don't you change your password?  The system is entirely compromised until you correct it.  You're the sysadmin, if you're this dumb the corporation is at risk."
+    },
+
+    {
+        "from": "Blackbeard",
+        "to": ["Aperez"],
+        "title": "Transmission Log 5024u-12-11",
+        "body": "Are you kidding me? Why don't you change your password?  The system is entirely compromised until you correct it.  You're the sysadmin, if you're this dumb the corporation is at risk."
+    },
+
+    {
+        "from": "Blackbeard",
+        "to": ["Aperez"],
+        "title": "Transmission Log 5024u-12-11",
         "body": "Are you kidding me? Why don't you change your password?  The system is entirely compromised until you correct it.  You're the sysadmin, if you're this dumb the corporation is at risk."
     }
 ]
