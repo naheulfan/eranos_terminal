@@ -1,19 +1,16 @@
 {
-    "serverAddress": "localhost",
-    "serverName": "Advanced Comp/Con secure transmission system",
+    "serverAddress": "lground_to_ship_AA_landship_01",
+    "serverName": "Ship Advanced Comp/Con secure transmission system",
     "iconName": "compcon.png",
     "terminalID": "Y56",
     "defaultUser": {
-        "userId": "user",
-        "password": "",
-        "userName": "anonymous"
+        "userId": "Aperez",
+        "password": "qh!R2xzz",
+        "userName": "Aperez"
     },
     "initialHistory": {
         "user": [
-            "login admin@admin"
-        ],
-        "admin": [
-            "ping fbi.gov"
+            "login Aperez:qh!R2xzz"
         ]
     }
 }

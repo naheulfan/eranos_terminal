@@ -16,6 +16,15 @@ function decrypt( args ) { // The same function can be used to encode text
     const textInClear = rot13( args.join( " " ) );
     return `<p class="hack-reveal">${ textInClear }</p>`;
 }
+
+function New_Instance( args ) { // create new susanoo instance
+    if ( args.length === 0 ) {
+        return "<p>A warrior's name must be provided to create a new Susano-o class instance</p>";
+    }
+    const warriorName = args[0];
+    return `<a href="config/network/susano-o-nhp_2.0.lcp" download="${warriorName}.lcp">Instanciate ${warriorName}</a>`;
+}
+
 function rot13( s ) { // cf. https://en.wikipedia.org/wiki/ROT13
     return s.replace( /[a-zA-Z]/g, ( c ) => String.fromCharCode( ( c <= "Z" ? 90 : 122 ) >= ( c = c.charCodeAt( 0 ) + 13 ) ? c : c - 26 ) );
 }
@@ -25,6 +34,16 @@ function identify() {
     return { message: introMsg, onInput( answer ) {
         return `Wrong! This is not "${ answer }"`;
     } };
+}
+
+function susanoo_protocol() {
+    const userName = args[0] || 'stranger';
+    return `Nice to meet you ${ userName }!`;
+}
+
+function susanoo_protocol() {
+    const userName = args[0] || 'stranger';
+    return `Nice to meet you ${ userName }!`;
 }
 
 const DWEETS = {
