@@ -17,7 +17,7 @@ function decrypt( args ) { // The same function can be used to encode text
     return `<p class="hack-reveal">${ textInClear }</p>`;
 }
 
-function New_Instance( args ) { // create new susanoo instance
+function new_instance( args ) { // create new susanoo instance
     if ( args.length === 0 ) {
         return "<p>A warrior's name must be provided to create a new Susano-o class instance</p>";
     }
@@ -34,16 +34,6 @@ function identify() {
     return { message: introMsg, onInput( answer ) {
         return `Wrong! This is not "${ answer }"`;
     } };
-}
-
-function susanoo_protocol() {
-    const userName = args[0] || 'stranger';
-    return `Nice to meet you ${ userName }!`;
-}
-
-function susanoo_protocol() {
-    const userName = args[0] || 'stranger';
-    return `Nice to meet you ${ userName }!`;
 }
 
 const DWEETS = {
