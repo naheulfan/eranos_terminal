@@ -276,37 +276,11 @@ kernel.init = function init( cmdLineContainer, outputContainer ) {
  * This should have every non-custom software command functions.
  */
 system = {
-    dumpdb() {
-        return new Promise( () => {
-            output( ":: serverDatabase - connected server information" );
-            debugObject( serverDatabase );
-            output( "----------" );
-            output( ":: userDatabase - connected user information" );
-            debugObject( userDatabase );
-            output( "----------" );
-            output( ":: userList - list of users registered in the connected server" );
-            debugObject( userList );
-        } );
-    },
-
-    whoami() {
-        return new Promise( ( resolve ) => {
-            resolve(
-                `${ serverDatabase.serverAddress }/${ userDatabase.userId }`
-            );
-        } );
-    },
 
     clear() {
         return new Promise( ( resolve ) => {
             setHeader();
             resolve( false );
-        } );
-    },
-
-    echo( args ) {
-        return new Promise( ( resolve ) => {
-            resolve( args.join( " " ) );
         } );
     },
 
@@ -425,13 +399,6 @@ system = {
         } );
     },
 
-    history() {
-        return new Promise( ( resolve ) => {
-            const messageList = history_.map( ( line, i ) => `[${ i }] ${ line }` ); // eslint-disable-line no-undef
-            resolve( messageList );
-        } );
-    },
-
     mail() {
         return new Promise( ( resolve, reject ) => {
             const messageList = mailList.filter( ( mail ) => mail.to.includes( userDatabase.userId ) )
@@ -460,26 +427,6 @@ system = {
             message.push( "---------------------------------------------" );
             message = [ ...message, ...mailAtIndex.body.split( "  " ) ];
             resolve( message );
-        } );
-    },
-
-    ping( args ) {
-        return new Promise( ( resolve, reject ) => {
-            if ( args === "" ) {
-                reject( new AddressIsEmptyError() );
-                return;
-            }
-
-            $.get( `config/network/${ args }/manifest.json`, ( serverInfo ) => {
-                resolve( `Server ${ serverInfo.serverAddress } (${ serverInfo.serverName }) can be reached` );
-            } )
-                .fail( () => reject( new AddressNotFoundError( args ) ) );
-        } );
-    },
-
-    telnet() {
-        return new Promise( ( _, reject ) => {
-            reject( new Error( "telnet is unsecure and is deprecated - use ssh instead" ) );
         } );
     },
 
