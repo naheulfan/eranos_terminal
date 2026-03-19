@@ -428,9 +428,9 @@ system = {
             message = [ ...message, ...mailAtIndex.body.split( "  " ) ];
             resolve( message );
         } );
-    },
+    }
 
-    ssh( args ) {
+    /*ssh( args ) {
         return new Promise( ( resolve, reject ) => {
             if ( args === "" ) {
                 reject( new AddressIsEmptyError() );
@@ -455,7 +455,7 @@ system = {
             }
             kernel.connectToServer( serverAddress, userName, passwd ).then( resolve ).catch( reject );
         } );
-    }
+    } */
 };
 
 function userPasswordFrom( creds ) {
