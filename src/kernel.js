@@ -304,14 +304,6 @@ system = {
         } );
     },
 
-    date() {
-        return new Promise( ( resolve ) => {
-            const date = new Date();
-            const time = `${ date.getHours() }:${ date.getMinutes() }:${ date.getSeconds() }`;
-            resolve( String( `${ serverDate.month } ${ serverDate.day } ${ serverDate.year } ${ time } ${ serverDate.reference }` ) );
-        } );
-    },
-
     echo( args ) {
         return new Promise( ( resolve ) => {
             resolve( args.join( " " ) );
