@@ -318,8 +318,8 @@ system = {
                 resolve( [ "Usage:", "> history", "The history command will list all the commands you alread typed in this terminal." ] );
             } else if ( args[ 0 ] === "login" ) {
                 resolve( [ "Usage:", "> login username:password", "Switch account: log in as another registered user on the server, to access your data files and messages." ] );
-            } else if ( args[ 0 ] === "mail" ) {
-                resolve( [ "Usage:", "> mail", "If you're logged in you can list your mail messages if any." ] );
+            } else if ( args[ 0 ] === "transcripts" ) {
+                resolve( [ "Usage:", "> transcripts", "If you're logged in you can consult past transcripts." ] );
             } else if ( args[ 0 ] === "ping" ) {
                 resolve( [
                     "Usage:",
@@ -328,7 +328,7 @@ system = {
                     "If the ping doesn't return a valid response, the address may be incorrect, may not exist or can't be reached locally."
                 ] );
             } else if ( args[ 0 ] === "read" ) {
-                resolve( [ "Usage:", "> read x", "If you're logged in you can read your mail messages if any." ] );
+                resolve( [ "Usage:", "> read x", "If you're logged in you can read your transcripts if any." ] );
             } else if ( args[ 0 ] === "ssh" ) {
                 resolve( [
                     "Usage:",
@@ -399,7 +399,7 @@ system = {
         } );
     },
 
-    mail() {
+    transcripts() {
         return new Promise( ( resolve, reject ) => {
             const messageList = mailList.filter( ( mail ) => mail.to.includes( userDatabase.userId ) )
                 .map( ( mail, i ) => `[${ i }] ${ mail.title }` );
