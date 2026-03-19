@@ -23,7 +23,7 @@
         "secretCommand": true,
         "message": "Error: Cannot find current instance Musashi. The instance has either already unshackled or has been destroyed. Please enter 'New_Instance NAME' to create a new instance and name it."
     },
-    "new_Instance": {
+    "new_instance": {
         "secretCommand": true
     }
 }
